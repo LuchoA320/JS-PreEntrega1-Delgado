@@ -1,0 +1,43 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    height: 10vh;
+    background-color: #9AE17F;
+}
+
+main {
+    background-image: url(../assets/images/fondopokemon.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+footer {
+    height: 10vh;
+    background-color: #9AE17F;
+}
+
+.pokemon {
+    transition:all 0.6s ease;
+}
+
+.pokemon:hover {
+    transform: scale(1.2);
+}
+
+.botonPokemon {
+    background-color: gray;
+    color: white;
+    border: 1px solid black;
+    transition: all 0.6s ease;
+}
+
+.botonPokemon:hover {
+    transform: scale(1.2);
+    background-color: black;
+    color: white;
+    
+}
