@@ -3,14 +3,13 @@
   PS: Puntos de Salud
   */
 
-
 // Prompt para pedir el nombre al usuario.
 const nombreUsuario = prompt("¡Hola! ¿Como te llamas?");
 alert("¡Bienvenido al mundo Pokemon " + nombreUsuario + "!");
 
 function menuPokemon() {
   let menuJuego;
-// Prompt del menu con 3 opciones.
+  // Prompt del menu con 3 opciones.
   while (
     menuJuego != "Jugar" &&
     menuJuego != "Instrucciones" &&
@@ -28,7 +27,7 @@ function menuPokemon() {
         );
         break;
       case "Sorpresa":
-        alert("Cargando datos de la Pokédex...")
+        alert("Cargando datos de la Pokédex...");
         window.location = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
         break;
       default:
@@ -72,7 +71,13 @@ class Pokemon {
           this.saludMaxima +
           "!"
       );
-      alert("Los puntos de poder de " + this.nombre + " han bajado a " + this.puntosPoder + ".");
+      alert(
+        "Los puntos de poder de " +
+          this.nombre +
+          " han bajado a " +
+          this.puntosPoder +
+          "."
+      );
     }
   }
   // 1. Sube (1) de PP.
@@ -81,7 +86,11 @@ class Pokemon {
     if (this.puntosPoder < 10) {
       this.puntosPoder++;
       alert(
-        "Los puntos de poder " + this.nombre + " han subido a " + this.puntosPoder + "."
+        "Los puntos de poder " +
+          this.nombre +
+          " han subido a " +
+          this.puntosPoder +
+          "."
       );
     } else {
       alert("¡Los puntos de poder " + this.nombre + " estan al maximo!");
@@ -93,12 +102,19 @@ class Pokemon {
   // 3. Que me reste 2 PP por ataque.
   atacar(objetivo) {
     if (this.puntosPoder <= 1 || this.salud <= 1) {
-      alert (this.nombre + " no puede atacar porque sus puntos de poder son demasiado bajos o se encuentra debilitado.")
+      alert(
+        this.nombre +
+          " no puede atacar porque sus puntos de poder son demasiado bajos o se encuentra debilitado."
+      );
     } else {
       objetivo.restarSalud(this.nivel);
       this.puntosPoder = this.puntosPoder - 2;
       alert(
-        "Los puntos de poder de " + this.nombre + " han bajado a " + this.puntosPoder + "."
+        "Los puntos de poder de " +
+          this.nombre +
+          " han bajado a " +
+          this.puntosPoder +
+          "."
       );
     }
   }
@@ -124,7 +140,7 @@ class Pokemon {
   // 2. Que si los PS alcanzaron el nivel maximo, muestre un mensaje de salud maxima.
   sumarSalud() {
     if (this.salud < this.saludMaxima) {
-      this.salud = this.salud + 2
+      this.salud = this.salud + 2;
       alert("La salud de " + this.nombre + " ha subido a " + this.salud);
     } else {
       alert("¡La salud de " + this.nombre + " esta al maximo!");
