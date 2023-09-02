@@ -1,40 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Document</title>
+    <link rel="shortcut icon" href="./assets/images/pokemon.ico" type="image/x-icon">
+    <title>Pokemon Pre Entrega</title>
 </head>
 <body>
-    <header>
-
+    <header class="container-fluid shadow-xl">
+        <section class="d-flex justify-content-center">
+            <img src="./assets/images/Pokemon_logo.png" alt="Pokemon" width="200">
+        </section>
+        <nav class="row text-center">
+            <a onclick="menuPokemon()">Menu</a>
+        </nav>
     </header>
 
     <main>
         <section class="container-fluid text-center">
-            <h1 class="nombrePokemon">Charmander</h1>
-            <img class="pokemon" src="./assets/images/charmander.png" alt="Charmander" width="200">
+            <h2 class="nombrePokemon">Torchic</h2>
+            <img class="pokemon" src="./assets/images/Torchic.png" alt="Charmander" width="200">
             <div>
-                <button onclick="charmander.entrenar()" class="btn shadow botonPokemon m-3">Entrenar</button>
-                <button onclick="charmander.alimentar()" class="btn shadow botonPokemon m-3">Alimentar</button>
-                <button onclick="charmander.atacar(treecko)" class="btn shadow botonPokemon m-3">Atacar</button>
+                <button onclick="torchic.entrenar()" class="btn shadow botonPokemon m-3">Entrenar <img src="./assets/images/pokedex.png" alt="pokedex" width="20"></button>
+                <button onclick="torchic.alimentar()" class="btn shadow botonPokemon m-3">Alimentar: Baya Zanama <img src="./assets/images/baya_zanama.png" alt="baya_ziuela" width="20"></button>
+                <button onclick="torchic.sumarSalud()" class="btn shadow botonPokemon m-3">Curar: Baya Aranja <img src="./assets/images/baya_aranja.png" alt="baya_aranja" width="20"></button>
+                <button onclick="torchic.atacar(treecko)" class="btn shadow botonPokemon m-3">Atacar <img src="./assets/images/ataque.png" alt="ataque_placaje" width="20"></button>
+                <button onclick="torchic.dañar(1)" class="btn shadow botonPokemon m-3 disabled">Dañar</button>
             
             </div>
-            <h1 class="nombrePokemon">Treecko</h1>
+            <h2 class="nombrePokemon">Treecko</h2>
             <img class="pokemon"  src="./assets/images/Treecko.png" alt="Treecko" width="200">
             <div>
-                <button onclick="treecko.entrenar()" class="btn shadow botonPokemon m-3">Entrenar</button>
-                <button onclick="treecko.alimentar()" class="btn shadow botonPokemon m-3">Alimentar</button>
-                <button onclick="treecko.atacar(charmander)" class="btn shadow botonPokemon m-3">Atacar</button>
-                
+                <button onclick="treecko.entrenar()" class="btn shadow botonPokemon m-3">Entrenar <img src="./assets/images/pokedex.png" alt="pokedex" width="20"></button>
+                <button onclick="treecko.alimentar()" class="btn shadow botonPokemon m-3">Alimentar: Baya Zanama <img src="./assets/images/baya_zanama.png" alt="baya_ziuela" width="20"></button>
+                <button onclick="treecko.sumarSalud()" class="btn shadow botonPokemon m-3">Curar: Baya Aranja <img src="./assets/images/baya_aranja.png" alt="baya_aranja" width="20"></button>
+                <button onclick="treecko.atacar(torchic)" class="btn shadow botonPokemon m-3">Atacar <img src="./assets/images/ataque.png" alt="ataque_placaje" width="20"></button>
+                <button onclick="treecko.dañar(1)" class="btn shadow botonPokemon m-3 disabled">Dañar</button>
             </div>
     
         </section>
     </main>
    
-    <footer></footer>
+    <footer class="shadow"></footer>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
