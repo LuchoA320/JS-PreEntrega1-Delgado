@@ -24,10 +24,11 @@ function menuPokemon() {
         break;
       case "Instrucciones":
         alert(
-          "Con la accion Atacar reduciras la salud (PS) de tu contrincante, pero le costara Puntos de Poder (PP) a tu Pokemon. El daño que causaras en tu oponente sera equivalente al nivel de tu Pokemon. \n Con la accion Entrenar, tu Pokemon subira de nivel a cambio de un Punto de Poder. Esto aumentara su Salud Maxima, asi como su capacidad de inflingir daño. No podras entrenar a tu Pokemon si se encuentra debilitado o su energia es demasiado baja.\n  La Baya Zanama aumentara los Puntos de Poder de tu Pokemon, y la Baya Aranja aumentara su salud."
+          "Con la acción Atacar reducirás la salud (PS) de tu contrincante, pero le costará Puntos de Poder (PP) a tu Pokémon. El daño que causarás en tu oponente será equivalente al nivel de tu Pokémon. \n Con la acción Entrenar, tu Pokémon subirá de nivel a cambio de un Punto de Poder. Esto aumentará su Salud Máxima, así como su capacidad de infligir daño. No podrás entrenar a tu Pokémon si se encuentra debilitado o sus puntos de poder son demasiado bajos. \n La Baya Zanama aumentará los Puntos de Poder de tu Pokémon, y la Baya Aranja aumentará su salud."
         );
         break;
       case "Sorpresa":
+        alert("Cargando datos de la Pokédex...")
         window.location = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
         break;
       default:
